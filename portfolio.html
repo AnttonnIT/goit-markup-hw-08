@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Домашне завдання GoIT про программі IT Generation"
+    />
+    <title>Студія</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteiner header__container">
+        <a href="index.html" class="logo header__logo"
+          ><span class="logo__text">Web</span>Studio</a
+        >
+        <div class="menu-conteiner js-menu-container">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a href="portfolio.html" class="nav__link nav__link--active"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com"
+                ><svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380961111111"
+                ><svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-social-list">
+            <li class="menu-social-list__item">
+              <a href="#" class="menu-social-list__link" lang="eu">Instagram</a>
+            </li>
+            <li class="menu-social-list__item">
+              <a href="#" class="menu-social-list__link" lang="eu">Twitter</a>
+            </li>
+            <li class="menu-social-list__item">
+              <a href="#" class="menu-social-list__link" lang="eu">Facebook</a>
+            </li>
+            <li class="menu-social-list__item">
+              <a href="#" class="menu-social-list__link" lang="eu">LinkedIn</a>
+            </li>
+          </ul>
+          <button type="button" class="menu-toggle js-close-menu menu-button">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню ">
+              <use
+                class="icon-cross"
+                href="./images/icons.svg#icon-mobile-cross"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <button type="button" class="menu-toggle js-open-menu menu-button">
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню ">
+            <use
+              class="icon-menu"
+              href="./images/icons.svg#icon-mobile-menu"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="conteiner">
+          <h2 class="tittle tittle--hidden">Наші проекти</h2>
+          <ul class="btn-list">
+            <li class="btn-list__item">
+              <button type="button" value="Усі" class="btn-list__button">
+                Усі
+              </button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" value="Веб-сайти" class="btn-list__button">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" value="Додатки" class="btn-list__button">
+                Додатки
+              </button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" value="Дизайн" class="btn-list__button">
+                Дизайн
+              </button>
+            </li>
+            <li class="btn-list__item">
+              <button type="button" value="Маркетинг" class="btn-list__button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <ul class="grid">
+            <li class="grid__item">
+              <a href="#" class="project">
+                <div class="project__conteiner-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio-grid/laptop-desctop.jpg    1x,
+                        images/portfolio-grid/laptop-desctop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio-grid/laptop-tab.jpg    1x,
+                        images/portfolio-grid/laptop-tab@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="images/portfolio-grid/laptop-mob.jpg"
+                      srcset="
+                        images/portfolio-grid/laptop-mob.jpg    1x,
+                        images/portfolio-grid/laptop-mob@2x.jpg 2x
+                      "
+                      alt="laptop"
+                      height="294"
+                    />
+                  </picture>
+                  <p class="projects__about">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="projects__conteiner-item">
+                  <h3 class="projects__name">Технокряк</h3>
+                  <p class="projects__topic">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item">
+              <a href="#" class="project">
+                <div class="project__conteiner-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio-grid/basket-desctop.jpg    1x,
+                        images/portfolio-grid/basket-desctop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio-grid/basket-tab.jpg    1x,
+                        images/portfolio-grid/basket-tab@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="images/portfolio-grid/basket-mob.jpg"
+                      srcset="
+                        images/portfolio-grid/basket-mob.jpg    1x,
+                        images/portfolio-grid/basket-mob@2x.jpg 2x
+                      "
+                      alt="basket"
+                      height="294"
+                    />
+                  </picture>
+                  <p class="projects__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus quia fugiat suscipit optio quidem perspiciatis,
+                    ipsam, quam cumque veritatis, iste alias nostrum porro.
+                  </p>
+                </div>
+                <div class="projects__conteiner-item">
+                  <h3 class="projects__name">
+                    Постер <span lang="eu">Orlean vs Golden Star</span>
+                  </h3>
+                  <p class="projects__topic">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item">
+              <a href="#" class="project">
+                <div class="project__conteiner-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio-grid/fish-desctop.jpg    1x,
+                        images/portfolio-grid/fish-desctop@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio-grid/fish-tab.jpg    1x,
+                        images/portfolio-grid/fish-tab@2x.jpg 2x
+                      " />
+                    <img
+                      src="images/portfolio-grid/fish-mob.jpg"
+                      srcset="
+                        images/portfolio-grid/fish-mob.jpg    1x,
+                        images/portfolio-grid/fish-mob@2x.jpg 2x
+                      "
+                      alt="fish"
+                      height="294"
+                  /></picture>
+                  <p class="projects__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus quia fugiat suscipit optio quidem perspiciatis,
+                    ipsam, quam cumque veritatis, iste alias nostrum porro.
+                  </p>
+                </div>
+                <div class="projects__conteiner-item">
+                  <h3 class="projects__name">
+                    Ресторан <span lang="eu">Seafood</span>
+                  </h3>
+                  <p class="projects__topic">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item">
+              <a href="#" class="project">
+                <div class="project__conteiner-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio-grid/headphones-desctop.jpg    1x,
+                        images/portfolio-grid/headphones-desctop@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio-grid/headphones-tab.jpg    1x,
+                        images/portfolio-grid/headphones-tab@2x.jpg 2x
+                      " />
+                    <img
+                      src="images/portfolio-grid/headphones-mob.jpg"
+                      srcset="
+                        images/portfolio-grid/headphones-mob.jpg    1x,
+                        images/portfolio-grid/headphones-mob@2x.jpg 2x
+                      "
+                      alt="headphones"
+                      height="294"
+                  /></picture>
+                  <p class="projects__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus quia fugiat suscipit optio quidem perspiciatis,
+                    ipsam, quam cumque veritatis, iste alias nostrum porro.
+                  </p>
+                </div>
+                <div class="projects__conteiner-item">
+                  <h3 class="projects__name">
+                    Проєкт <span lang="eu">Prime</span>
+                  </h3>
+                  <p class="projects__topic">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item">
+              <a href="#" class="project">
+                <div class="project__conteiner-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio-grid/box-desctop.jpg    1x,
+                        images/portfolio-grid/box-desctop@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio-grid/box-tab.jpg    1x,
+                        images/portfolio-grid/box-tab@2x.jpg 2x
+                      " />
+                    <img
+                      src="images/portfolio-grid/box-mob.jpg"
+                      srcset="
+                        images/portfolio-grid/box-mob.jpg    1x,
+                        images/portfolio-grid/box-mob@2x.jpg 2x
+                      "
+                      alt="box"
+                      height="294"
+                  /></picture>
+                  <p class="projects__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus quia fugiat suscipit optio quidem perspiciatis,
+                    ipsam, quam cumque veritatis, iste alias nostrum porro.
+                  </p>
+                </div>
+                <div class="projects__conteiner-item">
+                  <h3 class="projects__name">
+                    Проєкт <span lang="eu">Boxes</span>
+                  </h3>
+                  <p class="projects__topic">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item">
+              <a href="#" class="project">
+                <div class="project__conteiner-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio-grid/monitor-desctop.jpg    1x,
+                        images/portfolio-grid/monitor-desctop@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio-grid/monitor-tab.jpg    1x,
+                        images/portfolio-grid/monitor-tab@2x.jpg 2x
+                      " />
+                    <img
+                      src="images/portfolio-grid/monitor-mob.jpg"
+                      srcset="
+                        images/portfolio-grid/monitor-mob.jpg    1x,
+                        images/portfolio-grid/monitor-mob@2x.jpg 2x
+                      "
+                      alt="monitor"
+                      height="294"
+                  /></picture>
+                  <p class="projects__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus quia fugiat suscipit optio quidem perspiciatis,
+                    ipsam, quam cumque veritatis, iste alias nostrum porro.
+                  </p>
+                </div>
+                <div class="projects__conteiner-item">
+                  <h3 lang="eu" class="projects__name">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="projects__topic">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item">
+              <a href="#" class="project">
+                <div class="project__conteiner-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio-grid/book-desctop.jpg    1x,
+                        images/portfolio-grid/book-desctop@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio-grid/book-tab.jpg    1x,
+                        images/portfolio-grid/book-tab@2x.jpg 2x
+                      " />
+                    <img
+                      src="images/portfolio-grid/book-mob.jpg"
+                      srcset="
+                        images/portfolio-grid/book-mob.jpg    1x,
+                        images/portfolio-grid/book-mob@2x.jpg 2x
+                      "
+                      alt="book"
+                      height="294"
+                  /></picture>
+                  <p class="projects__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus quia fugiat suscipit optio quidem perspiciatis,
+                    ipsam, quam cumque veritatis, iste alias nostrum porro.
+                  </p>
+                </div>
+                <div class="projects__conteiner-item">
+                  <h3 class="projects__name">
+                    Видання <span lang="eu">Limited Edition</span>
+                  </h3>
+                  <p class="projects__topic">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item">
+              <a href="#" class="project">
+                <div class="project__conteiner-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio-grid/label-desctop.jpg    1x,
+                        images/portfolio-grid/label-desctop@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio-grid/label-tab.jpg    1x,
+                        images/portfolio-grid/label-tab@2x.jpg 2x
+                      " />
+                    <img
+                      src="images/portfolio-grid/label-mob.jpg"
+                      srcset="
+                        images/portfolio-grid/label-mob.jpg    1x,
+                        images/portfolio-grid/label-mob@2x.jpg 2x
+                      "
+                      alt="label"
+                      height="294"
+                  /></picture>
+                  <p class="projects__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus quia fugiat suscipit optio quidem perspiciatis,
+                    ipsam, quam cumque veritatis, iste alias nostrum porro.
+                  </p>
+                </div>
+                <div class="projects__conteiner-item">
+                  <h3 class="projects__name">
+                    Проєкт <span lang="eu">LAB</span>
+                  </h3>
+                  <p class="projects__topic">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item">
+              <a href="#" class="project">
+                <div class="project__conteiner-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/portfolio-grid/laptophand-desctop.jpg    1x,
+                        images/portfolio-grid/laptophand-desctop@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/portfolio-grid/laptophand-tab.jpg    1x,
+                        images/portfolio-grid/laptophand-tab@2x.jpg 2x
+                      " />
+                    <img
+                      src="images/portfolio-grid/laptophand-mob.jpg"
+                      srcset="
+                        images/portfolio-grid/laptophand-mob.jpg    1x,
+                        images/portfolio-grid/laptophand-mob@2x.jpg 2x
+                      "
+                      alt="laptop"
+                      height="294"
+                  /></picture>
+                  <p class="projects__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus quia fugiat suscipit optio quidem perspiciatis,
+                    ipsam, quam cumque veritatis, iste alias nostrum porro.
+                  </p>
+                </div>
+                <div class="projects__conteiner-item">
+                  <h3 lang="eu" class="projects__name">Growing Business</h3>
+                  <p class="projects__topic">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="conteiner footer__conteiner">
+        <div class="footer__address-social-conteiner">
+          <div class="footer__adress-conteiner">
+            <a href="index.html" class="logo footer__logo"
+              ><span class="logo__text">Web</span>Studio</a
+            >
+            <address class="address">
+              <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
+              <ul>
+                <li class="address__item">
+                  <a class="address__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__link">
+                  <a class="address__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social__conteiner">
+            <h3 class="footer__tittle">приєднуйтесь</h3>
+            <ul class="social__list">
+              <li class="social__item">
+                <a
+                  href="#"
+                  class="social__link social__link--dark"
+                  aria-label="instagram"
+                  ><svg width="20" height="20">
+                    <use href="images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="#"
+                  class="social__link social__link--dark"
+                  aria-label="twitter"
+                  ><svg width="20" height="20">
+                    <use href="images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="#"
+                  class="social__link social__link--dark"
+                  aria-label="facebook"
+                  ><svg width="20" height="20">
+                    <use href="images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="#"
+                  class="social__link social__link--dark"
+                  aria-label="linkedin"
+                  ><svg width="20" height="20">
+                    <use href="images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mailing__conteiner">
+          <h3 class="footer__tittle">Підпишіться на розсилку</h3>
+          <form class="mailing__form">
+            <label class="mailing__field">
+              <input
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                class="mailing__input"
+              />
+            </label>
+            <button type="submit" class="button mailing__button">
+              Підписатися
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

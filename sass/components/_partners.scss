@@ -1,0 +1,31 @@
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.partners__link {
+  width: 210px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: rgba(175, 177, 184, 1);
+
+  transition: border-color $primary-transition, fill $primary-transition,
+    background-color $primary-transition;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
