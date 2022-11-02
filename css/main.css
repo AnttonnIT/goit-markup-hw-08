@@ -942,14 +942,15 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin-top: 20px;
 }
 @media screen and (min-width: 1200px) {
   .form__field-checkbox {
     font-size: 14px;
     line-height: 1.71;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
